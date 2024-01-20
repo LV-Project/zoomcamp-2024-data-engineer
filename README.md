@@ -5,11 +5,20 @@ Question 1.
 
 By running `Docker run --help` which tag has the following text? - Automatically remove the container when it exits.
 
-Answer 1.
-
 Command:
 ```
     -> docker run --help | grep -i  "automatically"
 ```
 
 Solution: `--rm`
+
+Question 2. 
+
+Checking package wheel version in docker image python:3.9
+
+Command:
+```
+    -> docker run -it --entrypoint=/bin/bash python:3.9 -c "pip list"
+```
+
+Solution: `0.42.0`
